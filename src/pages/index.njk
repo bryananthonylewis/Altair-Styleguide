@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}
+{% set active_page = "index" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>Altair Web Team Style Guide</h1>
+        <p>
+          Altair's Web Team uses the
+          <a target="_blank" href="http://www.getbootstrap.com">Bootstrap</a>
+          framework because it follows the VSP
+          <a target="_blank" href="http://radar.vsp.com/">Radar.</a>
+          This also helps keep our front-end
+          code unified, that way we are all coding in a similar way.
+          The current version we are using is 4.1.
+          This style guide is ever evolving and subject to change
+          without notice. For reference only.
+        </p>
+        <h2>Legacy</h2>
+        <p>
+          Currently, our website and STAR use the
+          <a target="_blank" href="https://foundation.zurb.com/sites/docs/index.html">Foundation</a>
+          framework. We are using version 6.4.2.
+          We will use this framework until we have a uniform decision
+          to move forward with Bootstrap.
+        </p>
+        <h2>Overview</h2>
+        <p>
+          Altair's goal is to try and stick with as many defaults in
+          the projects current framework as possible.
+          With that said, each framework has a list of variables to customize.
+          Depending on the framework being used will also determine
+          how we customize those variables. Always over ride these
+          variables rather than tweak the actual source files.
+        </p>
+        <p>
+          Feel free to use the styles.scss file to this project as a
+          starter file moving forward with Bootstrap projects.
+        </p>
+        <p>
+          When creating new components, create a new .scss file for the
+          corresponding component. For example, if we are making a hero component,
+          there should also be a hero.scss file that contains all of the
+          component's styling. There should also be documentation on what the
+          HTML, CSS, and JS looks like along with any options that are avaliable.
+        </p>
+        <p>
+          Sticking with the hero component example, if we make a different background
+          option with a class .bg-green we want to make sure everyone knows about that
+          option and properly document it in this style guide.
+        </p>
+        <p>
+          For now, we will be using CodePen to show examples of new components, it's
+          functionality and the code associated with them.
+        </p>
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.njk" %}
+{% set active_page = "grid" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>Grid</h1>
+
+        <p>
+          There are multiple ways to make a grid. Column widths are set
+          in percentages, so they’re always fluid and sized relative
+          to their parent element.
+        </p>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 bg-light py-3 px-2 border">
+              One of two columns
+            </div>
+            <div class="col-md-6 bg-light py-3 px-2 border">
+              One of two columns
+            </div>
+          </div> <!-- /.row -->
+
+          <div class="row">
+            <div class="col-md-4 bg-light py-3 px-2 border">
+              One of three columns
+            </div>
+            <div class="col-md-4 bg-light py-3 px-2 border">
+              One of three columns
+            </div>
+            <div class="col-md-4 bg-light py-3 px-2 border">
+              One of three columns
+            </div>
+          </div> <!-- /.row -->
+
+          <div class="row mb-4">
+            <div class="col-md-3 bg-light py-3 px-2 border">
+              One of four columns
+            </div>
+            <div class="col-md-3 bg-light py-3 px-2 border">
+              One of four columns
+            </div>
+            <div class="col-md-3 bg-light py-3 px-2 border">
+              One of four columns
+            </div>
+            <div class="col-md-3 bg-light py-3 px-2 border">
+              One of four columns
+            </div>
+          </div> <!-- /.row -->
+        </div> <!-- /.container -->
+
+        <h2>Media Queries</h2>
+        <p>
+          Small devices are 576px and up to 768px
+        </p>
+        <p>
+          Medium devices (tablets) are 768px and up to 992px
+        </p>
+        <p>
+          Large devices (desktops) are 992px and up to 1200px
+        </p>
+        <p>
+          Extra large devices (large desktops and monitors) are 1200px and up
+        </p>
+
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

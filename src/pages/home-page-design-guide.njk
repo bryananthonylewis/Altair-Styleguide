@@ -1,0 +1,22 @@
+{% extends "layout.njk" %}
+{% set active_page = "home-page-design-guide" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>Home Page Design Guide</h1>
+        <p>
+          We have a home page story at the top of the page.
+          We like to have those no more than 700px in height and 1000px wide.
+        </p>
+        <p>
+          As of right now we have tiles at the bottom of the home
+          page which are 640 X 470 in size.
+        </p>
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

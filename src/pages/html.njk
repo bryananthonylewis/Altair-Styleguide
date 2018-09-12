@@ -1,0 +1,29 @@
+{% extends "layout.njk" %}
+{% set active_page = "html" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>HTML</h1>
+        <p>
+          When writing HTML, it's important to keep track of closing div's.
+          We like to comment our closing div with the main class that it is supporting
+          so it's easy and clear to tell what the closing div tag is
+          associated with.
+        </p>
+        <p>
+          Nest HTML with 2 spaces in a tab formatting.
+        </p>
+        <p>
+          Always use prettier to help with formatting on save.
+        </p>
+        <p>
+          Use Nunjucks for preprocessing if needed.
+        </p>
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+{% set active_page = "images" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>Images</h1>
+        <p>
+          Images on the web are expected to be responsive because of the many
+          screen sizes we are accessing websites from. In the bootstrap framework
+          that we use, responsive images start with a width of 100% and
+          an auto height. This means the the image will scale with the
+          column size that the image is nested inside of.
+        </p>
+        <p>
+          When preping images for web we need to figure out the largest
+          common denominator the image needs to be to fill the column
+          that the image sits inside of. For starters, Bootstrap's largest
+          media query starts at 1200px for it's content containers.
+          Background images will scale to the width and height of the browser.
+        </p>
+        <img class="img-fluid mb-3" src="https://via.placeholder.com/1000x200" alt="example image">
+        <h5>
+          Images for web should always be prepped at 72 DPI.
+        </h5>
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

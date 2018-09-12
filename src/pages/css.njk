@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+{% set active_page = "css" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>CSS</h1>
+        <p>
+          We use SCSS and precomile it to CSS using GULP.
+        </p>
+        <p>
+          When using SCSS it's important to not nest too much.
+          Nesting 3 layers deep is a good rule to go by.
+        </p>
+        <p>
+          If you are repeating code use a mixin.
+        </p>
+        <p>
+          Try and stick with the BEM methodology.
+          Here is a
+          <a target="_blank" href="http://getbem.com/introduction/">link</a>
+          if you aren't sure what the BEM methodology is.
+        </p>
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

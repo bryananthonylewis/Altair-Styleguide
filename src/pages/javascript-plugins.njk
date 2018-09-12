@@ -1,0 +1,41 @@
+{% extends "layout.njk" %}
+{% set active_page = "javascript-plugins" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>JavaScript Plugins</h1>
+        <ul>
+          <li>
+            <a target="_blank" href="http://parsleyjs.org/">
+              Parsley JS - Form Validator
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://jqueryvalidation.org/">
+              jQuery Validate - Form Validator
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://bootstrap-validate.js.org/">
+              Bootstrap Validator - 3rd party
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://formvalidation.io/guide/plugins/bootstrap/">
+              Form Validation - 3rd party
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="http://veno.es/venobox/">
+              VenoBox - jQuery Lightbox Plugin
+            </a>
+          </li>
+        </ul>
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

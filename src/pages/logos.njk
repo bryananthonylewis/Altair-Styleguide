@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+{% set active_page = "logos" %}
+{% block content %}
+<main class="my-4">
+  <div class="container">
+    <div class="row">
+      {% include "components/navigation.njk" %}
+      <div class="col-lg-9">
+        <h1>Logos</h1>
+        <p>
+          We use the SVG (Scalable Vector Graphic) file format
+          for all of our logos. These files should be cropped as
+          close as possible to logo and should have no white
+          space around it.
+        </p>
+        <p>
+          Here is an example of a proper SVG logo.
+        </p>
+        <img class="mb-5" src="https://www.altaireyewear.com/images/nav/img-nav-altair-logo-blue.svg" alt="logo">
+        <h5>Coding</h5>
+        <p class="mb-5">
+          There should be a max-width set on the img tag for SVG's.
+          Below is an example of an SVG with a max-width of 300px set.
+          Notice how the image height proportionally shrinks
+        </p>
+        <img class="logo-example" src="https://www.altaireyewear.com/images/nav/img-nav-altair-logo-blue.svg" alt="logo">
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</main>
+{% endblock %}

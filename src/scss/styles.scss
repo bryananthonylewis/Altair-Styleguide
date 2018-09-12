@@ -1,0 +1,121 @@
+/* Custom Colors
+--------------------------------------------- */
+$gray: #919d9d;
+$light-gray: #999;
+$normal-green: #aac382;
+$light-green: #eef3e5;
+
+/* Over ride Bootstrap Vars
+--------------------------------------------- */
+
+// colors
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+// variables
+$primary: $normal-green;
+$secondary: $gray;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+// body
+$body-bg: $white;
+$body-color: $black;
+
+// grid
+$grid-columns: 12;
+
+// border
+$border-radius: 0rem;
+$border-radius-lg: 0rem;
+$border-radius-sm: 0rem;
+
+// form
+$input-bg: $light-green;
+$input-border-color: $light-green;
+$input-border-width: 1px;
+$input-box-shadow: none;
+
+$input-focus-box-shadow: none;
+
+$custom-radio-indicator-icon-checked: none;
+
+// table
+$table-cell-padding: 0.3rem;
+
+// button padding
+$btn-padding-y: 0.675rem;
+
+/* Include Components
+--------------------------------------------- */
+@import "components/sidenav";
+@import "components/logo";
+
+// include bootstrap's default variables
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// include font awesome
+@import "node_modules/font-awesome/scss/font-awesome";
+
+/* Global Styles
+--------------------------------------------- */
+
+// logos
+.logo {
+}
+
+// headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+// sections
+main {
+}
+
+// utilities
+.btn {
+  font-size: 1.3rem;
+}
+
+.line-height-normal {
+  line-height: normal;
+}
+
+// tables
+table,
+.table {
+  font-size: 0.7rem;
+
+  thead {
+    background: $light-green;
+  }
+}
